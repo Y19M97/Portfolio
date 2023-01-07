@@ -26,6 +26,7 @@ body{
   background-color: var(--dark-bg);
   color: var(--font-color);
   font-family: var(--main-font);
+  overflow: hidden;
 }
 a{
   text-decoration: none;
@@ -42,7 +43,7 @@ a{
   content: '';
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .7);
   filter: blur(10px);
   position: absolute;
   left: 0;
@@ -54,8 +55,9 @@ a{
 }
 
 .screen{
-  top: 50%;
+  top: 0%;
   left: 50%;
+  transition: var(--transition);
   transform: translate(25%, -47%);
 }
 
@@ -135,6 +137,42 @@ img {
 }
 
 
+/* --------------------------- */
+/* jquery Animation  */
+#about .col-md-6 {
+opacity: 0;}
+#screen {
+  opacity: 0;
+}
+
+
+#isLoading{
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+background-color: var(--dark-bg);
+position: fixed;
+z-index: 9999999;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#isLoading i {
+  animation: dot 1s infinite alternate;
+}
+
+@keyframes dot {
+  0%{
+    transform: scale(0);
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1.2,1,2);
+
+  }
+}
 
 
 
