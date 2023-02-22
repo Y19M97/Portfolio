@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏴‍☠️</text></svg>">
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/style/all.min.css">
     <link rel="stylesheet" href="assets/style/main.css">
     <title>Blog</title>
@@ -37,7 +38,7 @@
             </div>
             <div class="row py-5">
                 <div class="col-md-6">
-                    <div class="details">
+                    <div class="details" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <h3 class="mb-3">AMIT Learning</h3>
                         <span class=" text-muted mb-3">Front-End Developer 'ReactJs ' <span class=" ms-2"></span>
                             2022
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="details">
+                <div class="details" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <h3 class="mb-3">AMIT Learning</h3>
                     <span class=" text-muted mb-3">Front-End Instructor 'ReactJs ' <span class=" ms-2"></span>
                         2020
@@ -57,8 +58,11 @@
     </section>
 
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="assets/js/index.js"></script>
 </body>
 
